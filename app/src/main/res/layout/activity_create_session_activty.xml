@@ -6,7 +6,7 @@
     android:layout_height="fill_parent"
     android:fitsSystemWindows="true"
     tools:context=".Activities.SignUpActivity"
-    android:background="#000">
+    android:background="#fff">
 
     <LinearLayout
         android:orientation="vertical"
@@ -26,11 +26,11 @@
             android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_username"
+            <EditText android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textCapWords"
-                android:hint="Username"
+                android:hint="Name"
                 android:textColor="#f6f0f0"
                 android:textColorHint="#f6f0f0" />
 
@@ -62,43 +62,28 @@
             android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_password"
+            <EditText android:id="@+id/size"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:hint="Password"
+                android:hint="Teams Size"
                 android:textColor="#f6f0f0"
                 android:textColorHint="#f6f0f0"
                 android:shadowColor="#f6f0f0" />
         </android.support.design.widget.TextInputLayout>
 
-        <!-- Password Label -->
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_password_confirmation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:hint="Confirm Password"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff" />
-        </android.support.design.widget.TextInputLayout>
 
 
         <!-- Signup Button -->
         <android.support.v7.widget.AppCompatButton
-            android:id="@+id/button_signup"
+            android:id="@+id/button_create"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
             android:padding="12dp"
             android:layout_weight="1"
-            android:text="Create Account"
+            android:text="Create Event"
             android:background="#66FA8B"
             android:textColor="#ffffff" />
 
@@ -107,10 +92,10 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            android:text="Already a member? Log in"
+            android:text="Already a member? Login"
             android:gravity="center"
             android:textSize="16dip"
-            android:textColor="#fefc55" />
+            android:textColor="#f6f0f0" />
 
     </LinearLayout>
 </LinearLayout>
